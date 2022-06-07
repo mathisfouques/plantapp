@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plant_app/const/resource.dart';
+import 'package:plant_app/destination_next.dart';
+import 'package:plant_app/from.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,19 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: Center(child: Image.asset(R.ASSETS_IMAGES_PLANT_1_PNG)),
+      home: const DestinationNext(
+        clicked: R.ASSETS_IMAGES_PLANT_2_PNG,
+      ),
     );
   }
 }

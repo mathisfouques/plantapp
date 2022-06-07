@@ -27,4 +27,8 @@ class R {
 
   /// ![preview](file://./../../assets/images/plant_8.png)
   static const String ASSETS_IMAGES_PLANT_8_PNG = 'assets/images/plant_8.png';
+
+  static const double small = 80;
+  static const double medium = 150;
+  static const double large = 230;
 }
