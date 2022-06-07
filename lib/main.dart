@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:plant_app/const/resource.dart';
-import 'package:plant_app/destination_next.dart';
 import 'package:plant_app/from.dart';
 
 void main() {
@@ -17,9 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const DestinationNext(
-        clicked: R.ASSETS_IMAGES_PLANT_2_PNG,
-      ),
+      home: const From(),
     );
   }
 }
